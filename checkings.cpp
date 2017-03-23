@@ -4,3 +4,4 @@ Checkings::Checkings()
 {
 
 }
+double Checkings::getOverdraft(){return overdraftFee;}
