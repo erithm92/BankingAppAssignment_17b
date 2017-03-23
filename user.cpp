@@ -2,8 +2,7 @@
 
 User::User()
 {
-    myCheckings = new Checkings();
-    mySavings = new Savings();
+
 }
 User::User(Checkings checkings, Savings savings)
 {
