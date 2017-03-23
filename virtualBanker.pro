@@ -11,11 +11,15 @@ SOURCES += \
     user.cpp \
     savings.cpp \
     checkings.cpp \
-    account.cpp
+    account.cpp \
+    savingswindow.cpp \
+    checkingswindow.cpp
 
 HEADERS += \
     window.h \
     user.h \
     savings.h \
     checkings.h \
-    account.h
+    account.h \
+    savingswindow.h \
+    checkingswindow.h
