@@ -4,12 +4,12 @@
 #include "account.h"
 #include "checkingswindow.h"
 
-class Checkings
+class Checkings : public Account
 {
 public:
     Checkings();
     double getOverdraft();
-    //void openWindow();
+    void openWindow();
 private:
     double overdraftFee;
     CheckingsWindow myWindow;

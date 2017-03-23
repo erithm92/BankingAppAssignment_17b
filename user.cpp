@@ -5,6 +5,12 @@ User::User()
     myCheckings = new Checkings();
     mySavings = new Savings();
 }
+User::User(Checkings checkings, Savings savings)
+{
+    myCheckings = checkings;
+    mySavings = savings;
+}
+
 void User::setCheckings(Checkings checkings)
 {
     myCheckings = checkings;
@@ -22,7 +28,13 @@ Savings User::getSavings()
     return mySavings;
 }
 
-void User::openCheckings(){}
-void User::openSavings(){}
+void User::openCheckings()
+{
+    myCheckings.openWindow();
+}
+void User::openSavings()
+{
+    mySavings.openWindow();
+}
 void User::openTransactions(){}
 void User::transferFunds(){}

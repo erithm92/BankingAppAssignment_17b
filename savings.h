@@ -10,7 +10,7 @@ public:
     Savings();
     double getInterest();
     void setInterest(double);
-    //void openWindow();
+    void openWindow();
 private:
     double annualInterest;
     SavingsWindow myWindow;

@@ -2,7 +2,7 @@
 
 Savings::Savings()
 {
-
+    annualInterest = .02;
 }
 double Savings::getInterest()
 {
@@ -12,4 +12,8 @@ double Savings::getInterest()
 void Savings::setInterest(double interest)
 {
     annualInterest = interest;
+}
+void Savings::openWindow()
+{
+    myWindow.show();
 }

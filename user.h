@@ -8,7 +8,7 @@ class User
 {
 public:
     User();
-
+    User(Checkings, Savings);
     void setSavings(Savings);
     Savings getSavings();
     void setCheckings(Checkings);
