@@ -8,6 +8,7 @@ class Checkings : public Account
 {
 public:
     Checkings();
+    Checkings(Checkings &obj); // <Tandy> declaring copy contructor for user.cpp line 9 to fix "attempting to reference a deleted function"
     double getOverdraft();
     void openWindow();
 private:

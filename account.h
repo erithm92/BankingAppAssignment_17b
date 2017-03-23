@@ -14,11 +14,12 @@ public:
     void setAmount(double);
     int getAccountNumber();
     void openWindow();
-
+    int accountNumber = 0; // <Tandy> edit to comply with C2248; removing const to make value modifiable in account.cpp line 5
 private:
     //User myUser;
     double amount;
-    static const int accountNumber = 0;
+//    static const int accountNumber = 0;
+//    static int accountNumber; // <Tandy> removing const to make value modifiable in account.cpp line 5
 };
 
 #endif // ACCOUNT_H

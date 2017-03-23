@@ -8,11 +8,12 @@ class User
 {
 public:
     User();
-    User(Checkings, Savings);
-    void setSavings(Savings);
-    Savings getSavings();
-    void setCheckings(Checkings);
-    Checkings getCheckings();
+    User(Checkings &, Savings); // <Tandy> edit to comply with C2248
+//    void setSavings(Savings);
+//    Savings getSavings();
+//    Savings* getSavingsPtr(); // <Tandy> edit to comply with C2248
+//    void setCheckings(Checkings);
+//    Checkings getCheckings();
 
     //will call openWindow function in correct account
     void openSavings(); //slot for switchSavings
@@ -24,6 +25,8 @@ public:
 private:
     Savings mySavings;
     Checkings myCheckings;
+//    static Savings* mySavings; // <Tandy> changing objects to pointers to solve error C2248: "cannot access private member..."
+//    static Checkings* myCheckings; // <Tandy> changing objects to pointers to solve error C2248: "cannot access private member..."
 };
 
 #endif // USER_H
